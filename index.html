@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100&family=Cookie&family=Dancing+Script&family=Gentium+Book+Plus:ital@0;1&family=Gulzar&family=Josefin+Sans&family=Kanit&family=Libre+Bodoni:ital@1&family=Lobster&family=Mukta&family=Murecho:wght@100&family=Open+Sans:wght@500&family=Pacifico&family=Padauk&family=Parisienne&family=Poppins:wght@500&family=Roboto:wght@300&family=Tiro+Tamil&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="main-container">
+      <nav class="flex-div">
+        <!-- <button id="btn">fetch Api</button> -->
+
+        <div class="nav-left">
+          <img src="./assets/logo.png" alt="" id="menu-icon" />
+          <h2>Spotify</h2>
+        </div>
+        <div class="nav-middle">
+          <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input class="input-field" type="text" placeholder="Search" />
+          <button id="Song">Search</button>
+
+          </div>
+        </div>
+        <div class="nav-right">
+          <h3>Arshia</h3>
+        </div>
+      </nav>
+
+      <!-- sidebar -->
+      <div class="playlist-section">
+        <div class="sidebar" id="sidebar">
+          <div class="shortcut-links">
+            <a href=""
+              ><i class="fa-solid fa-house-user"></i>
+              <p>Home</p></a
+            >
+            <a href=""
+              ><i class="fa-solid fa-heart-circle-bolt"></i>
+              <p>Liked songs</p></a
+            >
+            <a href=""><i class="fa-solid fa-music"></i><p>Playlist</p></a>
+          </div>
+        </div>
+        <div class="container">
+      
+       <h1 class="glow">LET'S PLAY THE MUSIC</h1> 
+          <h1 id="playlist_head"></h1>
+          <div id="list-container"></div>
+        </div>
+      </div>
+
+      <div id="myModal" class="modal">
+        <div class="main-model">
+          <div class="modal-head">
+            <img src="" alt="" id="modal-img" />
+            <div class="modal-section">
+            <div class="modal-content">
+              <h4 id="song-title">Beautiful People</h4>
+              
+            </div>
+            <!-- progress-bar -->
+
+            <div class="progress-container" id="progress-container">
+              <div class="progress-duration">
+                <div id="current-time">0:00</div>
+                <div id="duration">2:44</div>
+              </div>
+            </div>
+            <div class="progress-div" id="progress-div">
+              <div class="progress" id="progress"></div>
+            </div>
+            <!-- controls -->
+            <div class="music-controls">
+              <i class="fas fa-solid fa-backward" id="prev"></i>
+              <i class="fa-solid fa-play play-btn" id="play"></i>
+              <i class="fas fa-solid fa-forward" id="next"></i>
+            </div>
+          </div>
+        </div>
+        </div>
+      <button id="modalBtn">Close</button>
+
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
